@@ -1,28 +1,28 @@
 #https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
 
-Canvas
+##Canvas
 
-	HTML5 -ке қосылған <canvas> HTML элементімен Javascript арқылы түрлі графиктер салуға болады. Мысал үшін, онымен графиктер, фото композициялар, анимациялар немесе керек болса real-time режимде видеоларды өңдеуге немесе жасауға болады.
+HTML5 -ке қосылған <canvas> HTML элементімен Javascript арқылы түрлі графиктер салуға болады. Мысал үшін, онымен графиктер, фото композициялар, анимациялар немесе керек болса real-time режимде видеоларды өңдеуге немесе жасауға болады.
 
-	Mozilla applications ұжымы Gecko 1.8 ядросында <canvas> -ты дамытуға көптеген үлес қосып жатыр (мысалы Firefox 1.5). Бұл элемент алғашқы рет Apple компаниясының бастамасымен OS X Dashboard және Safari бағдарламаларында енгілізілді. Internet Explorer -де <canvas> 9 нұсқасынан бастап қолданысқа енгізілді. Google -дың Explorer Canvas жобасынның кодтарын пайдаланудың арқасында Internet Explorer -дің алдыңғы нұсқаларында да <canvas> тиімді жұмыс жасай бастады. Opera 9 және Google Chrome браузерлерінде <canvas> элементін қолдануға болады.
+Mozilla applications ұжымы Gecko 1.8 ядросында <canvas> -ты дамытуға көптеген үлес қосып жатыр (мысалы Firefox 1.5). Бұл элемент алғашқы рет Apple компаниясының бастамасымен OS X Dashboard және Safari бағдарламаларында енгілізілді. Internet Explorer -де <canvas> 9 нұсқасынан бастап қолданысқа енгізілді. Google -дың Explorer Canvas жобасынның кодтарын пайдаланудың арқасында Internet Explorer -дің алдыңғы нұсқаларында да <canvas> тиімді жұмыс жасай бастады. Opera 9 және Google Chrome браузерлерінде <canvas> элементін қолдануға болады.
 
-	Бұл <canvas> элементі ғаламтор беттерінде 3D графикалар салуды аппаратты жолмен жылдамдату мақсатында WebGL -де де пайдаланылады.
+Бұл <canvas> элементі ғаламтор беттерінде 3D графикалар салуды аппаратты жолмен жылдамдату мақсатында WebGL -де де пайдаланылады.
 
-	МЫСАЛ
+##МЫСАЛ
 
-	CanvasRenderingContext2D.fillRect() методы пайдаланылған жай қарапайым ғана кодтан үзінді:
+CanvasRenderingContext2D.fillRect() методы пайдаланылған жай қарапайым ғана кодтан үзінді:
 
-		HTML
-		1 <canvas id="canvas"></canvas>
+HTML
+     1 <canvas id="canvas"></canvas>
+
+JavaScript
+     1 var canvas = document.getElementById("canvas");
+     2 var ctx = canvas.getContext("2d");
+     3 
+     4 ctx.fillStyle = "green";
+     5 ctx.fillRect(10, 10, 100, 100);
 		
-		JavaScript
-		1 var canvas = document.getElementById("canvas");
-		2 var ctx = canvas.getContext("2d");
-		3 
-		4 ctx.fillStyle = "green";
-		5 ctx.fillRect(10, 10, 100, 100);
-		
-	Төмендегі кодты өзгерту арқылы canvas элементіндегі өзгерісті сол сәтте бақылап көре аласыз	
+Төмендегі кодты өзгерту арқылы canvas элементіндегі өзгерісті сол сәтте бақылап көре аласыз	
 
 	СІЛТЕМЕЛЕР
 
